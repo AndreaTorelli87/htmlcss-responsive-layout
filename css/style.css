@@ -126,6 +126,19 @@ nav {
 
 
 
+#about-us .image{
+   position: relative;
+}
+
+#about-us .fa-quote-left{
+   position: absolute;
+   top: 0;
+   right: 0;
+   font-size: 8rem;
+}
+
+
+
 /* ----- TABLET ----- */
 @media screen and (min-width: 768px) {
    
