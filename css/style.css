@@ -38,7 +38,7 @@ section{
 }
 
 .border2{
-   border-radius: 2rem;
+   border-radius: 3rem;
 }
 
 .font-white{
@@ -61,11 +61,23 @@ section{
    width: 100%;
 }
 
+p,em{
+   line-height: 2rem;
+}
+
+h4{
+   font-size: 26px;
+}
+
+h3{
+   font-size: 2rem;
+}
+
 /* ----- HEADER ----- */
 
 header{
    width: 100%;
-   height: 3rem;
+   height: 50px;
    background-color: var(--blu); /* -------------------------------------------- */
    position: fixed;
    z-index: 9999;
@@ -79,6 +91,10 @@ header .container{
    align-items: center;
 }
 
+#logo{
+   line-height: 100%;
+}
+
 nav {
    display: none;
 }
@@ -87,6 +103,14 @@ nav {
    display: inline-block;
 }
 
+ul{
+   list-style: none;
+}
+
+header a{
+   text-decoration: none;
+   padding: 0.4rem;
+}
 
 /* ----- INTRO ----- */
 
@@ -98,18 +122,43 @@ nav {
    background-color: #B5DDFF;
    width: 100%;
    margin-top: 1rem;
-   text-align: center
+   text-align: center;
+   padding: 1rem;
 }
 
-#intro span, #intro h3{
+#intro span, #intro h4{
    color: var(--blu);
 }
 
+#intro h4{
+   padding: 1rem;
+}
+
+#intro .button{
+   background-color: var(--blu);
+}
+
+.symbol{
+   font-size: 5rem;
+}
 
 /* ----- PLANNING ----- */
 
+#planning h3{
+   padding: 3rem;
+}
+
 .cerchio{
-   width: 1rem;
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   line-height: 50px;
+}
+
+#planning .border2{
+   margin: 2rem 0;
+   padding: 1rem;
+   text-align: center;
 }
 
 /* ----- TESTIMONIALS ----- */
@@ -138,6 +187,14 @@ nav {
 }
 
 
+
+
+
+
+
+footer{
+   background-color: #333333;
+}
 
 /* ----- TABLET ----- */
 @media screen and (min-width: 768px) {
@@ -187,8 +244,14 @@ nav {
       margin: auto;
    }
   
+   /* ----- HEADER ----- */
+
    nav {
       display: inline-block;
+   }
+
+   nav .button{
+      color: black;
    }
 
    #hamburger {
