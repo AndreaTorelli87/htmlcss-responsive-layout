@@ -45,8 +45,16 @@ section{
    color: var(--white);
 }
 
+.font-viola{
+   color: var(--viola);
+}
+
 .bg-white{
    background-color: var(--white);
+}
+
+.bg-viola{
+   background-color: var(--viola);
 }
 
 .image img{
@@ -109,6 +117,18 @@ nav {
    width: 1rem;
 }
 
+/* ----- TESTIMONIALS ----- */
+
+#testimonials .container{
+   text-align: center;
+}
+
+
+#testimonials .image{
+   border-radius: 50%;
+}
+
+
 
 
 /* ----- TABLET ----- */
@@ -147,7 +167,9 @@ nav {
    justify-content: end;
   }
 
-
+  #testimonials .card{
+   display: flex;
+  }
 
 }
 
