@@ -13,7 +13,7 @@
 }
 
 .button{
-   border-radius: 20px;
+   border-radius: 60px;
    padding: 10px;
 }
 
@@ -158,7 +158,7 @@ header a{
 }
 
 #intro .card:first-child img{
-   margin-bottom: -36px;
+   margin: 0 0 -37px 20px;
   }
 
 /* ----- PLANNING ----- */
@@ -276,11 +276,43 @@ header a{
    margin-bottom: 2rem;
 }
 
+/* ----- GET STARTED ----- */
 
+#get-started{
+   text-align: center; 
+}
 
+#get-started h4{
+   font-weight: 100;
+   color: #D5D4F4;
+   padding-bottom: 2rem;
+}
+
+#get-started h2{
+   font-size: 4rem;
+   color: #FDC15F;
+   padding: 3rem 0;
+   font-weight: normal;
+}
+
+#get-started .button{
+   padding: 1rem 4rem;
+   text-decoration: none;
+}
+
+#get-started .container div{
+   padding: 3rem;
+}
+
+/*----- FOOTER ----- */
 
 footer{
    background-color: #333333;
+}
+
+footer p{
+   padding: 2rem 0;
+   text-align: center;
 }
 
 /* ----- TABLET ----- */
@@ -331,10 +363,16 @@ footer{
   #about-us .container > div:first-child{
    margin-right: 3rem;
   }
+  
+  #get-started .container{
+      max-width: 550px;
+  }
 
+  footer .container{
+   max-width: 550px;
+   }
 
 }
-
 
 /* ----- DESKTOP ----- */
 @media screen and (min-width: 992px){
@@ -384,21 +422,8 @@ footer{
    width: calc(100% / 2 - 4rem);
   }
 
-
   #features .card{
      width: calc(100% / 3 - 10px);
   }
-
-
-
-
-
-}
-
-@media screen and (min-width: 1200){
-   
-   .container{
-      max-width: 1170px;
-   }
 
 }
