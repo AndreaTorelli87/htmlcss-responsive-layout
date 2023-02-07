@@ -187,13 +187,28 @@ header a{
    text-align: center;
 }
 
-
-#testimonials .image{
+#testimonials img{
+   height: 200px;
+   width: 200px;
+   object-fit: cover;
    border-radius: 50%;
+   margin: 1rem;
+}
+
+#testimonials h2, #testimonials .card{
+   margin: 2rem 0;
+} 
+
+#testimonials h4{
+   padding: 1rem 0;
+}
+
+#testimonials .fa-quote-right, #testimonials .fa-quote-left{
+   font-size: 1.5rem;
 }
 
 
-
+/* ----- ABOUT-US ----- */
 
 #about-us .image{
    position: relative;
@@ -246,9 +261,19 @@ footer{
    display: flex;
   }
 
+  #testimonials .card div{
+   align-self: center;
+   text-align: left;
+  }
+
+
+
   #features .card{
    width: calc(100% / 2 - 10px);
   }
+
+  
+
 
 
 }
@@ -315,7 +340,7 @@ footer{
 
 }
 
-@media screen (min-width: 1200){
+@media screen and (min-width: 1200){
    
    .container{
       max-width: 1170px;
