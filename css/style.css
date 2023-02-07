@@ -64,15 +64,19 @@ section{
 }
 
 p,em{
-   line-height: 2rem;
+   line-height: 1.5rem;
 }
 
-h4{
-   font-size: 20px;
+h2{
+   font-size: 2.5rem;
 }
 
 h3{
    font-size: 2rem;
+}
+
+h4{
+   font-size: 20px;
 }
 
 /* ----- HEADER ----- */
@@ -207,6 +211,38 @@ header a{
    font-size: 1.5rem;
 }
 
+/* ----- FEATURES ----- */
+
+#features h2{
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+#features .card{
+   padding: 2rem 2rem 3rem;
+   margin-top: 2rem;
+   color: #5A6E7F;
+}
+
+#features .number{
+   font-size: 3rem;
+   font-weight: bold;
+}
+
+#features h4{
+   padding: 1rem 0;
+}
+
+#features .card p{
+   margin-bottom: 2rem;
+}
+
+#features .button{
+   font-weight: bold;
+   padding: 10px 3rem;
+   text-decoration: none;
+}
+
 
 /* ----- ABOUT-US ----- */
 
@@ -287,8 +323,6 @@ footer{
       margin: auto;
    }
   
-   /* ----- HEADER ----- */
-
    nav {
       display: inline-block;
    }
@@ -330,9 +364,9 @@ footer{
   }
 
 
-   #features .card{
-      width: calc(100% / 3 - 10px);
-   }
+  #features .card{
+     width: calc(100% / 3 - 10px);
+  }
 
 
 
