@@ -15,7 +15,6 @@
 .button{
    border-radius: 20px;
    padding: 10px;
-   /* display: inline-block; */
 }
 
 :root{
@@ -64,7 +63,7 @@ section{
 }
 
 p,em{
-   line-height: 1.5rem;
+   line-height: 2rem;
 }
 
 h2{
@@ -83,7 +82,7 @@ h4{
 
 header{
    width: 100%;
-   background-color: var(--blu); /* -------------------------------------------- */
+   background-color: var(--blu);
    position: fixed;
    z-index: 9999;
    top: 0;
@@ -243,22 +242,39 @@ header a{
    text-decoration: none;
 }
 
-
 /* ----- ABOUT-US ----- */
+
+#about-us p{
+   padding: 2rem 0;
+}
+
+#about-us img{
+   height: 200px;
+   width: 200px;
+   object-fit: cover;
+   border-radius: 50%;
+   margin: 1rem;
+}
 
 #about-us .image{
    position: relative;
+   display: inline-block;
 }
 
 #about-us .fa-quote-left{
    position: absolute;
    top: 0;
    right: 0;
-   font-size: 8rem;
+   font-size: 5rem;
 }
 
+#about-us a{
+   text-decoration: none;
+}
 
-
+#about-us h3{
+   margin-bottom: 2rem;
+}
 
 
 
@@ -302,14 +318,19 @@ footer{
    text-align: left;
   }
 
-
-
   #features .card{
    width: calc(100% / 2 - 10px);
   }
 
+  #about-us .container{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 2rem;
+  }
   
-
+  #about-us .container > div:first-child{
+   margin-right: 3rem;
+  }
 
 
 }
