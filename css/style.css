@@ -26,11 +26,13 @@
 
 section{
    padding: 3rem 0;
+   scroll-margin-top: 70px;
 }
 
 .container{
-   width: 440px;
+   max-width: 440px;
    margin: auto;
+   padding: 0 1rem;
 }
 
 .border1{
@@ -66,7 +68,7 @@ p,em{
 }
 
 h4{
-   font-size: 26px;
+   font-size: 20px;
 }
 
 h3{
@@ -77,7 +79,6 @@ h3{
 
 header{
    width: 100%;
-   height: 50px;
    background-color: var(--blu); /* -------------------------------------------- */
    position: fixed;
    z-index: 9999;
@@ -89,6 +90,7 @@ header .container{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   height: 70px;
 }
 
 #logo{
@@ -101,6 +103,7 @@ nav {
 
 #hamburger {
    display: inline-block;
+   font-size: 2rem;
 }
 
 ul{
@@ -109,7 +112,7 @@ ul{
 
 header a{
    text-decoration: none;
-   padding: 0.4rem;
+   margin-left: 1rem;
 }
 
 /* ----- INTRO ----- */
@@ -120,10 +123,12 @@ header a{
 
 #intro .card{
    background-color: #B5DDFF;
+   color: #5A6E7F;
+   font-weight: bolder;
    width: 100%;
    margin-top: 1rem;
    text-align: center;
-   padding: 1rem;
+   padding: 2rem;
 }
 
 #intro span, #intro h4{
@@ -131,28 +136,43 @@ header a{
 }
 
 #intro h4{
-   padding: 1rem;
+   padding: 1rem 0;
 }
 
 #intro .button{
    background-color: var(--blu);
+   margin: 2rem 0;
+   width: 15rem;
+   text-align: center;
 }
 
 .symbol{
    font-size: 5rem;
 }
 
+#intro .card:first-child{
+   text-align: left;
+}
+
+#intro .card:first-child img{
+   margin-bottom: -36px;
+  }
+
 /* ----- PLANNING ----- */
 
 #planning h3{
-   padding: 3rem;
+   padding: 3rem 0;
+}
+
+#planning h4{
+   padding: 1rem 0;
 }
 
 .cerchio{
-   height: 50px;
    width: 50px;
    border-radius: 50%;
    line-height: 50px;
+   margin: 1rem auto;
 }
 
 #planning .border2{
@@ -200,7 +220,7 @@ footer{
 @media screen and (min-width: 768px) {
    
    .container{
-      width: 730px;
+      max-width: 730px;
       margin: auto;
    }
 
@@ -218,11 +238,9 @@ footer{
    width: calc(100% / 3 * 2 - 5px);
   }
 
-  #planning .container{
-   width: 680px;
-   display: flex;
-   justify-content: end;
-  }
+  #intro .image{
+   width: 70%;
+   }
 
   #testimonials .card{
    display: flex;
@@ -240,7 +258,7 @@ footer{
 @media screen and (min-width: 992px){
 
    .container{
-      width: 960px;
+      max-width: 960px;
       margin: auto;
    }
   
@@ -258,12 +276,49 @@ footer{
       display: none;
    }
 
+   #intro .card:first-child{
+      display: flex;
+   }
+
+   #intro .image{
+      align-self: end;
+      width: 150%;
+   }
+
+  #planning .container{
+   display: flex;
+   align-items: end;
+   justify-content: space-around;
+  }
+
+  #planning .bg-white{
+   margin: 0;
+  }
+
+  #planning .bg-white .image{
+   width: 70%;
+   margin: auto;
+  }
+
+  #planning .container > div{
+   width: calc(100% / 2 - 4rem);
+  }
+
+
    #features .card{
       width: calc(100% / 3 - 10px);
    }
+
+
+
+
 
 }
 
 @media screen (min-width: 1200){
    
+   .container{
+      max-width: 1170px;
+   }
+
 }
